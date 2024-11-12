@@ -32,7 +32,7 @@ server.get("/", (req, res) => {
 });
 
 // Serve static files from the public directory
-server.use(express.static(path.join(__dirname, "client", "build")));
+// server.use(express.static(path.join(__dirname, "client", "build")));
 server.use("/uploads", express.static(path.join("uploads")));
 
 server.use("/api", router);
